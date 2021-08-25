@@ -38,10 +38,10 @@ cardType: summary_large_image
             <div class="page-banner">
                 {{ content | safe}}
             </div>
-            <div class="gallery">
-                <ul class="image-grid">
+            <div class="article">
+                <article class="image-grid">
                     {% for image in gallery %}
-                    <li class="image-container">
+                    <figure class="image-container">
                         <a href="/gallery/{{ image.title | slug }}" aria-label="Gallery image {{ image.title }}">
                             {% respimg 
                                 src=image.src,
@@ -55,9 +55,9 @@ cardType: summary_large_image
                                 height=400
                             %}
                         </a>
-                    </li>
+                 </figure>
                     {% endfor %}
-                </ul>
+                </article>
             </div>
         </main>
 
