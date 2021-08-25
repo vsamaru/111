@@ -2,7 +2,7 @@
 eleventyNavigation:
   key: Home
   order: 0
-heading: Photo Gallery
+heading: 
 description: 
 layout: base.njk
 ---
